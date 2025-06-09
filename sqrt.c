@@ -25,8 +25,10 @@ int main()
 {
 	float i;
 
-	for (i = 0.0; i < 100.0; i = i + 1.0) {
-		printf("Number %2.1f Sqaure Root %.19f\n", i, Sqrt(i, 0.000000001));
+	printf("Enter ending number number:(eg. 1.00, 10.0)\n");
+	scanf("%f",&i);
+	for (float j = 1.0; j <= i; j = j + 1.0) {
+		printf("Number %2.1f Sqaure Root %.6f\n", j, Sqrt(j, 0.000000001));
 	}
 	return 0;
 }
